@@ -137,4 +137,11 @@ public class Test05 {
             System.out.println("Transaction.getYear() = " + Transaction.getYear());
         });
     }
+
+
+
+    public void test6(){
+
+        System.out.println("wgc test");
+    }
 }
