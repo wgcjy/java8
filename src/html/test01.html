@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>单选按钮取消选中的三种方式</title>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            $(":radio").click(function () {
+                var r = $(this).attr("name");
+                $(":radio[name=" + r + "]:not(:checked)").attr("tag", 0);
+                if ($(this).attr("tag") == 1) {
+                    $(this).attr("checked", false);
+                    $(this).attr("tag", 0);
+                }
+                else {
+                    $(this).attr("tag",1);
+                }
+            });
+        });
+
+
+        function ok1() {
+            var value = $("input[name='browser']:checked").val();
+            alert(value)
+        }
+
+
+    </script>
+</head>
+<body>
+<p>您喜欢哪款浏览器？</p>
+
+<form>
+    <!--<input style="display:none;" id="hidebrowser" type="radio" name="browser" value="">-->
+    <input type="radio" name="browser" value="Internet Explorer">Internet Explorer<br />
+    <input type="radio" name="browser" value="Firefox">Firefox<br />
+    <input type="radio" name="browser" value="Netscape">Netscape<br />
+    <input type="radio" name="browser" value="Opera">Opera<br />
+</form>
+<!--<input type="button" value="提交" id="button1"/>-->
+<button id="button1" onclick="ok1()">确定</button>
+
+</body>
+</html>

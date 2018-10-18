@@ -1,0 +1,10 @@
+JDK常用注解：
+1.@Override:限定重写父类方法，改注解只能用于方法
+  @Deprecated:用户表示某个元素(类、方法)已经过时
+  @SuppressWarnings:抑制编译器警告
+
+2、如何自定义注解
+    详情查看 练习demo MyAnnotation
+
+3、元注解
+    修饰注解的注解 例如:@Retention @Target 详细查看该注解的@Target都为ElementType.ANNOTATION_TYPE
