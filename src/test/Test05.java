@@ -144,4 +144,8 @@ public class Test05 {
 
         System.out.println("wgc test");
     }
+    public void test7(){
+
+        System.out.println("wgc test");
+    }
 }
