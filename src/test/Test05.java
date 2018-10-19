@@ -118,6 +118,8 @@ public class Test05 {
     }
     public void test2(){
 
+        System.out.println("999");
+
         List<Trader> collect = transactions.stream().map(Transaction::getTrader)
                 .filter(trader -> trader.getCity().equals("Cambridge"))
                 .distinct().sorted(Comparator.comparing(Trader::getName))
